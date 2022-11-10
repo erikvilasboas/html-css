@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            text-align: center;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0;
+        }
+        section {
+            margin-bottom: 15px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > h2 {
+            text-align: center;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+            text-align: right;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+        
+        footer > p{
+            margin: 0;
+        }
+
+        .shadow {
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav class="shadow"> <!--Menu-->
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Support</a>
+            <a href="#">Info</a>
+        </nav>
+    </header>
+    <main class="shadow"><!--Principal/Corpo-->
+        <section id="assunto" class="shadow"><!--Sessão/Divisão semantica-->
+            <article>
+                <h2>Esporte Politica Tecnologia</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officia. Enim laudantium fugit labore voluptates placeat culpa minima laborum neque odio natus amet aliquam nesciunt, deleniti quis veniam molestias tenetur?
+                </P>
+            </article>
+        </section>
+        <section id="noticias" class="shadow">
+            <article><!--Artigo/Divisão semantica-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto asperiores delectus quam error! Nam quisquam illum voluptatibus reprehenderit iusto earum eius, fugit exercitationem, laboriosam itaque deserunt in, voluptas est.
+                </p>
+                <aside><!--Sub Artigo/Divisão semantica-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><!--Roda pé-->
+        <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+</body>
+</html>
